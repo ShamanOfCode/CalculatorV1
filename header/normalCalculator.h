@@ -5,10 +5,15 @@
 #include <math.h>
 
 namespace nC {
-	class calculation{
+	void main() {
+		int num1 = 0;
+		int num2 = 0;
+		char sign;
 
-	};
-	calculation calcO;
+		std::cout << "Shamans normal Calculator" << std::endl;
+		std::cout << "Enter here: ";
+
+	}
 }
 
 #endif // NORMALCALCULATOR_H

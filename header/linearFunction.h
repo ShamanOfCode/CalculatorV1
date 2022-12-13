@@ -9,7 +9,7 @@ namespace lFNS {
 		public:
 			int y = 0;
 			int m = 0;
-			char x= 'x';
+			char x = 'x';
 			int b = 0;
 	};
 	lFC lFO;

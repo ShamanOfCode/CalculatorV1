@@ -13,7 +13,9 @@
 #include <unistd.h>		// For usleep (i think)
 #include <ctype.h>
 #include <cmath>		// Imports sqrt()
-#include "linearFunction.h"
+// Import headers
+#include "header/linearFunction.h"
+#include "header/normalCalculator.h"
 
 /***************************************
  * isalpha() --> is char a char
