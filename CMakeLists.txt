@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(CalculatorV1 main.cpp
-    linearFunction.h)
+    header/linearFunction.h
+    header/normalCalculator.h)
 
 install(TARGETS CalculatorV1
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
