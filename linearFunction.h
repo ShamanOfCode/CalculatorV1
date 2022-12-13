@@ -14,6 +14,13 @@ namespace lFNS {
 	};
 	lFC lFO;
 
+	/**
+	 * @brief The whatisX class
+	 * FIXME: lFO.x = char; the if function will check if linearVariables.x is a char or int
+	 * if it's a int it will be transformed to a int(cin into a new int variable if
+	 * it will be decided from the user in linearFunction();
+	 */
+
 	class whatisX {
 		public:
 			bool isXchar;
@@ -36,6 +43,13 @@ namespace lFNS {
 	};
 	whatisX wiXO;
 
+	/**
+	 * @brief calculationStep
+	 * if isXchar true --> deciding which way of calculating with x or with a number
+	 * true = if it's x
+	 * false = if it's a number
+	 */
+
 	class calculation {
 		public:
 			void calculationSteps() {
@@ -57,65 +71,106 @@ namespace lFNS {
 	calculation calcO;
 
 	class LF {
-		class inputCorrect {
-			public:
-				std::string choice;
-				void inputCorrectFunction() {
+		public:
+			class inputCorrect {
+				public:
+					std::string choice;
+					void inputCorrectFunction() {
 					std::cout << "Is your function correct or do you want to change it? (yes/no):" << std::endl;
 					std::cin >> choice;
-				}
-		};
-		inputCorrect iCO;
-
-		void fortnite() {
-			std::cout << "deine mutter" << std::endl;
-		}
-		std::cout << "Linear function calculator" << std::endl;
-		std::cout << "Enter your function step by step: " << std::endl;
-
-		cout << "m = ";
-		cin >> linearVariablesObj.m;
-		cout << "y=" << linearVariablesObj.m << "x + b" << endl;
-
-		// FIXME: x = "x"(x to be calculated) and if x = number then calculate
-		// cout << "Enter 'x' to leave it blank" << endl;
-		std::cout << "\nx = ";
-		std::cin >> linearVariablesObj.x;
-		wiXO.functionPrint();
-
-		std::cout << "\nb = ";
-		std::cin >> linearVariablesObj.b;
-		std::cout << "y=" << linearVariablesObj.m << linearVariablesObj.x << " + " <<linearVariablesObj.b << endl;
-		/**************************************************************************
-		 * TODO: Function which will print the steps in the calculation
-		 *
-		 * Here it asks if your function is correct --> TODO: Create a class
-		 *
-		 * NOTE: Class for this function or extra void function
-		 *************************************************************************/
-		system("clear");
-		if (whatisXObj.isXchar == true) {
-			cout << "Your function: y=" << linearVariablesObj.m << "x" << "+" << linearVariablesObj.b << endl;
-			inputCorrectObject.inputCorrectFunction();
-		}
-		else if (whatisXObj.isXchar == false) {
-			cout << "Your function: y=" << linearVariablesObj.m << "*" << linearVariablesObj.x << "+" << linearVariablesObj.b << endl;
-			inputCorrectObject.inputCorrectFunction();
-		}
-
-		if (inputCorrectObject.choice == "yes" || inputCorrectObject.choice == "Yes" || inputCorrectObject.choice == "YES" || inputCorrectObject.choice == "y" || inputCorrectObject.choice == "Y") {
-			calculationObj.calculationSteps();
-		}
-
-		// FIXME: "Your Function"
-		else if (inputCorrectObject.choice == "no" || inputCorrectObject.choice == "No" || inputCorrectObject.choice == "NO") {
-			system("clear");
-			cout << "Your Function: y=" << linearVariablesObj.m << "x" << "+" << linearVariablesObj.b << endl;
-			return linearFunction();
-		}
-
+			}
 	};
-	LF LFO;
+			inputCorrect iCO;
+
+			void main() {
+				std::cout << "Linear function calculator" << std::endl;
+				std::cout << "Enter your function step by step: " << std::endl;
+
+				std::cout << "m = ";
+				std::cin >> lFO.m;
+				std::cout << "y=" << lFO.m << "x + b" << std::endl;
+
+				// FIXME: x = "x"(x to be calculated) and if x = number then calculate
+				// cout << "Enter 'x' to leave it blank" << endl;
+				std::cout << "\nx = ";
+				std::cin >> lFO.x;
+				wiXO.functionPrint();
+
+				std::cout << "\nb = ";
+				std::cin >> lFO.b;
+				std::cout << "y=" << lFO.m << lFO.x << " + " <<lFO.b << std::endl;
+				/**************************************************************************
+				 * TODO: Function which will print the steps in the calculation
+				 *
+				 * Here it asks if your function is correct --> TODO: Create a class
+				 *
+				 * NOTE: Class for this function or extra void function
+				 *************************************************************************/
+				system("clear");
+				if (wiXO.isXchar == true) {
+					std::cout << "Your function: y=" << lFO.m << "x" << "+" << lFO.b << std::endl;
+					iCO.inputCorrectFunction();
+				}
+				else if (wiXO.isXchar == false) {
+					std::cout << "Your function: y=" << lFO.m << "*" << lFO.x << "+" << lFO.b << std::endl;
+					iCO.inputCorrectFunction();
+				}
+
+				if (iCO.choice == "yes" || iCO.choice == "Yes" || iCO.choice == "YES" || iCO.choice == "y" || iCO.choice == "Y") {
+					calcO.calculationSteps();
+				}
+
+				// FIXME: "Your Function"
+				else if (iCO.choice == "no" || iCO.choice == "No" || iCO.choice == "NO") {
+					system("clear");
+					std::cout << "Your Function: y=" << lFO.m << "x" << "+" << lFO.b << std::endl;
+				}
+				std::cout << "Linear function calculator" << std::endl;
+				std::cout << "Enter your function step by step: " << std::endl;
+
+				std::cout << "m = ";
+				std::cin >> lFO.m;
+				std::cout << "y=" << lFO.m << "x + b" << std::endl;
+
+				// FIXME: x = "x"(x to be calculated) and if x = number then calculate
+				// cout << "Enter 'x' to leave it blank" << endl;
+				std::cout << "\nx = ";
+				std::cin >> lFO.x;
+				wiXO.functionPrint();
+
+				std::cout << "\nb = ";
+				std::cin >> lFO.b;
+				std::cout << "y=" << lFO.m << lFO.x << " + " <<lFO.b << std::endl;
+				/**************************************************************************
+				 * TODO: Function which will print the steps in the calculation
+				 *
+				 * Here it asks if your function is correct --> TODO: Create a class
+				 *
+				 * NOTE: Class for this function or extra void function
+				 *************************************************************************/
+				system("clear");
+				if (wiXO.isXchar == true) {
+					std::cout << "Your function: y=" << lFO.m << "x" << "+" << lFO.b << std::endl;
+					iCO.inputCorrectFunction();
+				}
+				else if (wiXO.isXchar == false) {
+					std::cout << "Your function: y=" << lFO.m << "*" << lFO.x << "+" << lFO.b << std::endl;
+					iCO.inputCorrectFunction();
+				}
+
+				if (iCO.choice == "yes" || iCO.choice == "Yes" || iCO.choice == "YES" || iCO.choice == "y" || iCO.choice == "Y") {
+					calcO.calculationSteps();
+				}
+
+				// FIXME: "Your Function"
+				else if (iCO.choice == "no" || iCO.choice == "No" || iCO.choice == "NO") {
+					system("clear");
+					std::cout << "Your Function: y=" << lFO.m << "x" << "+" << lFO.b << std::endl;
+					return main();
+				}
+				return main();
+			}
+		};
 };
 
 #endif // LINEARVARIABLE_H
