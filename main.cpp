@@ -27,7 +27,6 @@ unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); 
 using namespace std;
 
 // Welcome function ----> user decides which method
-
 class welcomeClass {
 	private:
 		char choice;
@@ -77,6 +76,7 @@ class welcomeClass {
 
 };
 welcomeClass welcomeObj;
+
 
 int main() {
 	welcomeObj.welcomeInputFunction();

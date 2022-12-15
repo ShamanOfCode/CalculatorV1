@@ -2,7 +2,7 @@
 #ifndef NORMALCALCULATOR_H
 #define NORMALCALCULATOR_H
 #include <iostream>
-#include <math.h>
+#include <cmath>	// sqrt()
 
 namespace nCN {
 	void main() {
@@ -11,14 +11,17 @@ namespace nCN {
 		char sign;
 
 		std::cout << "Shamans normal Calculator" << std::endl;
-		std::cout << "Enter first number here: ";
+		// TODO: quit goes to the welcome function again
+		std::cout << "Enter first number here (q to quit): ";
 		std::cin >> num1;
+
+		if (num1 == 'q' || num1 == 'Q') {
+			welcomeObj.welcomeInputFunction();
+		}
 		std::cout << "Enter operator: ";
 		std::cin >> sign;
 		std::cout << "Enter second number:  ";
 		std::cin >> num2;
-
 	}
 }
-
 #endif // NORMALCALCULATOR_H
