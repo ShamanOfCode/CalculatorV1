@@ -28,51 +28,58 @@ using namespace std;
 
 // Welcome function ----> user decides which method
 
-int welcome() {
-	class welcomeClass {
-		private:
-			string choice;
-		public:
-			lFNS::LF lFi;
-			void welcomeInputFunction() {
-				cout << "Welcome to ShamanOfCodes calculator\n" << endl;
-				cout << "(Q/q) Quit" << endl;
-				cout << "(1) Linear function" << endl;
-				cout << "(2) Linear system of equation" << endl;
-				cout << "(3) Normal Calculator" << endl;
-				cout << "(4) Theorem of Pythagoras " << endl;
-				cout << "...more soon\n" << endl;
+class welcomeClass {
+	private:
+		char choice;
+		lFNS::LF lFi;
+	public:
+		void welcomeInputFunction() {
+			cout << "Welcome to ShamanOfCodes calculator\n" << endl;
+			cout << "(Q/q) Quit" << endl;
+			cout << "(1) Normal Calculator" << endl;
+			cout << "(2) Linear function" << endl;
+			cout << "(3) Linear system of equation" << endl;
+			cout << "(4) Theorem of Pythagoras " << endl;
+			cout << "...more soon\n" << endl;
 
-				cout << "Choose your method: ";
-				cin >> choice;
+			cout << "Choose your method: ";
+			cin >> choice;
 
-				if (choice == "q" || choice == "Q") {
+			switch (choice) {
+				case 'q':
 					exit(EXIT_FAILURE);
 					system("clear");
-				}
-				else if (choice == "1") {
+				break;
+				case '1':
+					nCN::main();
+					system("clear");
+				break;
+				case '2':
 					lFi.main();
 					system("clear");
-				}
-				// TODO: Linear system of equation there you will decide which procedure
-				else if (choice == "2") {
+				break;
+				case '3':
 					system("clear");
 					cout << "Still working on it!\nComing soon\n" << endl;
 					usleep(3 * microsecond);		// Sleep for 3 seconds
 					system("clear");
 					welcomeInputFunction();
-				}
+				break;
+				case '4':
+					system("clear");
+					cout << "Still working on it!\nComing soon\n" << endl;
+					usleep(3 * microsecond);		// Sleep for 3 seconds
+					system("clear");
+					welcomeInputFunction();
+				break;
 			}
-	};
-	welcomeClass welcomeObj;
+		}
 
-	welcomeObj.welcomeInputFunction();
-
-	return 0;
-}
+};
+welcomeClass welcomeObj;
 
 int main() {
-	welcome();
+	welcomeObj.welcomeInputFunction();
 
 	system("clear");
 	return main();
