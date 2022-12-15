@@ -5,7 +5,7 @@
 #include <cmath>	// sqrt()
 
 namespace nCN {
-	void main() {
+	void normalCalculatorFunction() {
 		int num1 = 0;
 		int num2 = 0;
 		char sign;
