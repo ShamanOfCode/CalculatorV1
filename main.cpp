@@ -50,11 +50,11 @@ class welcomeClass {
 					system("clear");
 				break;
 				case '1':
-					nCN::main();
+					nCN::normalCalculatorFunction();
 					system("clear");
 				break;
 				case '2':
-					lFi.main();
+					lFi.linearFunctionCalcFunction();
 					system("clear");
 				break;
 				case '3':

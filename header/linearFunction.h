@@ -21,6 +21,10 @@ namespace lFNS {
 	 * it will be decided from the user in linearFunction();
 	 */
 
+	/***************************************
+	 * isalpha() --> is char a char
+	 * isdigit() --> is char a digit(number)
+	***************************************/
 	class whatisX {
 		public:
 			bool isXchar;
@@ -82,7 +86,7 @@ namespace lFNS {
 	};
 	inputCorrect iCO;
 
-	void main() {
+	void linearFunctionCalcFunction() {
 		std::cout << "Linear function calculator" << std::endl;
 		std::cout << "Enter your function step by step: " << std::endl;
 
@@ -166,9 +170,9 @@ namespace lFNS {
 			else if (iCO.choice == "no" || iCO.choice == "No" || iCO.choice == "NO" || iCO.choice == "n" || iCO.choice == "N") {
 				system("clear");
 				std::cout << "Your Function: y=" << lFO.m << "x" << "+" << lFO.b << std::endl;
-				return main();
+				return linearFunctionCalcFunction();
 			}
-			return main();
+			return linearFunctionCalcFunction();
 		}
 	};
 };

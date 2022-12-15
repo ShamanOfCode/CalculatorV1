@@ -16,7 +16,7 @@ namespace nCN {
 		std::cin >> num1;
 
 		if (num1 == 'q' || num1 == 'Q') {
-			welcomeObj.welcomeInputFunction();
+
 		}
 		std::cout << "Enter operator: ";
 		std::cin >> sign;
