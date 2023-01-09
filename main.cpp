@@ -17,7 +17,8 @@
 #include "header/welcome.h"
 
 int main() {
-	welcomeObj.welcomeInputFunction();
+	welcomeNamespace::welcomeClass welcomeClassI;
+	welcomeClassI.welcomeInputFunction();
 
 	system("clear");
 	return main();

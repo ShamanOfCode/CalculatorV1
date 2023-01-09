@@ -3,6 +3,7 @@
 #define LINEARFUNCTION_H
 #include <ctype.h>
 #include <iostream>
+#include "linkToWelcome.h"
 
 namespace lFNS {
 	class lFC {
@@ -87,7 +88,7 @@ namespace lFNS {
 	inputCorrect iCO;
 
 	void linearFunctionCalcFunction() {
-		std::cout << "Linear function calculator" << std::endl;
+		std::cout << "Shamans Linear function calculator" << std::endl;
 		std::cout << "Enter your function step by step: " << std::endl;
 
 		std::cout << "m = ";
