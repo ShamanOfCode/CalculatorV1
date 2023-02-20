@@ -28,15 +28,15 @@ namespace welcomeNamespace {
 
 				switch (choice) {
 					case 'q':
-						exit(EXIT_FAILURE);
+						exit(EXIT_SUCCESS);
 						system("clear");
 					break;
 					case '1':
-
+						normalCalculatorNamespace::normalCalculatorVoid();
 						system("clear");
 					break;
 					case '2':
-						lFi.linearFunctionCalcFunction();
+						lFNS::lFMO;
 						system("clear");
 					break;
 					case '3':
