@@ -19,7 +19,6 @@
 int main() {
 	welcomeNamespace::welcomeClass welcomeClassI;
 	welcomeClassI.welcomeInputFunction();
-
 	system("clear");
 	return main();
 }
