@@ -8,6 +8,9 @@
 
 unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
 
+using lFNS::linearFunctionMain;
+using normalCalculatorNamespace::normalCalculatorVoid;
+
 // Welcome function ----> user decides which method
 namespace welcomeNamespace {
 	class welcomeClass {
@@ -22,7 +25,6 @@ namespace welcomeNamespace {
 				std::cout << "(3) Linear system of equation" << std::endl;
 				std::cout << "(4) Theorem of Pythagoras " << std::endl;
 				std::cout << "...more soon\n" << std::endl;
-
 				std::cout << "Choose your method: ";
 				std::cin >> choice;
 
@@ -32,26 +34,32 @@ namespace welcomeNamespace {
 						system("clear");
 					break;
 					case '1':
-						normalCalculatorNamespace::normalCalculatorVoid();
+						normalCalculatorVoid();
 						system("clear");
 					break;
 					case '2':
-						lFNS::lFMO;
 						system("clear");
+						std::cout << "Still working on it!\nComing soon\n" << std::endl;
+						usleep(3 * microsecond);		// Sleep for 3 seconds
+						system("clear");
+						return welcomeInputFunction();
+//						FIXME: calling linearFunction.h
+//						class linearFunctionCalcFunction;
+//						system("clear");
 					break;
 					case '3':
 						system("clear");
 						std::cout << "Still working on it!\nComing soon\n" << std::endl;
 						usleep(3 * microsecond);		// Sleep for 3 seconds
 						system("clear");
-						welcomeInputFunction();
+						return welcomeInputFunction();
 					break;
 					case '4':
 						system("clear");
 						std::cout << "Still working on it!\nComing soon\n" << std::endl;
 						usleep(3 * microsecond);		// Sleep for 3 seconds
 						system("clear");
-						welcomeInputFunction();
+						return welcomeInputFunction();
 					break;
 				}
 			}

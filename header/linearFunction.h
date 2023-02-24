@@ -180,7 +180,7 @@ namespace lFNS {
 			}
 
 	};
-	linearFunctionMain lFMO;
+	linearFunctionMain linearFunctionMainO;
 
 };
 
