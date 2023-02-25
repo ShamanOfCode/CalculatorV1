@@ -20,6 +20,7 @@ namespace normalCalculatorNamespace {
 		if (num1 == 'q' || num1 == 'Q') {
 			// TODO: quit goes to the welcome function again
 			// linkLinearFunction::linkToWelcomeFunc();
+			#endif
 		}
 		std::cout << "Enter second number: ";  // entering num2
 		std::cin >> num2;
@@ -32,7 +33,8 @@ namespace normalCalculatorNamespace {
 			sum = num1 * num2;
 			std::cout << sum << std::endl;
 			unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-			usleep(3 * microsecond);		// Sleep for 3 seconds
+			usleep(3 * microsecond);				// Sleep for 3 seconds
+			return normalCalculatorVoid();
 		}
 		// division
 		if (sign == '/') {
@@ -46,7 +48,8 @@ namespace normalCalculatorNamespace {
 				sum = num1 / num2;
 				std::cout << sum << std::endl;
 				unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-				usleep(3 * microsecond);		// Sleep for 3 seconds
+				usleep(3 * microsecond);				// Sleep for 3 seconds
+				return normalCalculatorVoid();
 			}
 		}
 		// subtraction
@@ -54,15 +57,16 @@ namespace normalCalculatorNamespace {
 			sum = num1 + num2;
 			std::cout << sum << std::endl;
 			unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-			usleep(3 * microsecond);		// Sleep for 3 seconds
+			usleep(3 * microsecond);				// Sleep for 3 seconds
+			return normalCalculatorVoid();
 		}
 		// addition
 		if (sign == '-') {
 			sum = num1 - num2;
 			std::cout << sum << std::endl;
 			unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-			usleep(3 * microsecond);		// Sleep for 3 seconds
+			usleep(3 * microsecond);				// Sleep for 3 seconds
+			return normalCalculatorVoid();
 		}
 	}
 }
-#endif // NORMALCALCULATOR_H

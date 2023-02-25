@@ -8,7 +8,7 @@
 
 unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
 
-using lFNS::linearFunctionMain;
+using lFNS::linearFunctionCalcFunction;
 using normalCalculatorNamespace::normalCalculatorVoid;
 
 // Welcome function ----> user decides which method
@@ -38,14 +38,8 @@ namespace welcomeNamespace {
 						system("clear");
 					break;
 					case '2':
+						linearFunctionCalcFunction();
 						system("clear");
-						std::cout << "Still working on it!\nComing soon\n" << std::endl;
-						usleep(3 * microsecond);		// Sleep for 3 seconds
-						system("clear");
-						return welcomeInputFunction();
-//						FIXME: calling linearFunction.h
-//						class linearFunctionCalcFunction;
-//						system("clear");
 					break;
 					case '3':
 						system("clear");
