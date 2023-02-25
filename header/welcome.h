@@ -5,11 +5,15 @@
 #include <ctype.h>
 #include "linearFunction.h"
 #include "normalCalculator.h"
+#include "linear_system_of_equation.h"
+#include "theorem_of_pythagoras.h"
 
 unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
 
 using lFNS::linearFunctionCalcFunction;
 using normalCalculatorNamespace::normalCalculatorVoid;
+using linearSystemOfEquationNamespace::linearSystemOfEquationFunction;
+using theoremOfPythagorasNamespace::theoremOfPythagorasFunction;
 
 // Welcome function ----> user decides which method
 namespace welcomeNamespace {
