@@ -35,6 +35,7 @@ namespace lFNS {
 					isXchar = false;
 				}
 			}
+			// FIXME: Still not working that mx. Now: y=m*x+b FIX: y=mx+b
 			void functionPrint() {		// function for printing the function
 				if (isXchar == true) {
 					std::cout << "y=" << lFO.m << "x + " << lFO.b << std::endl;

@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(CalculatorV1 main.cpp
     header/linearFunction.h
     header/normalCalculator.h
+    header/linear_system_of_equation.h
+    header/theorem_of_pythagoras.h
     header/welcome.h)
 
 install(TARGETS CalculatorV1
