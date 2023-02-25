@@ -15,7 +15,7 @@ using normalCalculatorNamespace::normalCalculatorVoid;
 using linearSystemOfEquationNamespace::linearSystemOfEquationFunction;
 using theoremOfPythagorasNamespace::theoremOfPythagorasFunction;
 
-// Welcome function ----> user decides which method
+// Welcome function ---> user decides which method
 namespace welcomeNamespace {
 	class welcomeClass {
 		private:
