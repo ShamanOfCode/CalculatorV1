@@ -20,15 +20,14 @@ namespace lFNS {
 	 * if it's a int it will be transformed to a int(cin into a new int variable if
 	 * it will be decided from the user in linearFunction();
 	 */
-
-	/***************************************
-	 * isalpha() --> is char a char
-	 * isdigit() --> is char a digit(number)
-	***************************************/
 	class whatisX {
 		public:
 			bool isXchar;
-			void ifFunction() {
+			void ifFunction() {		// void function for the check
+				/***************************************
+				 * isalpha() --> is char a char
+				 * isdigit() --> is char a digit(number)
+				***************************************/
 				if (isalpha(lFO.x)) {
 					isXchar = true;
 				}
@@ -36,7 +35,7 @@ namespace lFNS {
 					isXchar = false;
 				}
 			}
-			void functionPrint() {
+			void functionPrint() {		// function for printing the function
 				if (isXchar == true) {
 					std::cout << "y=" << lFO.m << "x + " << lFO.b << std::endl;
 				}
@@ -53,7 +52,6 @@ namespace lFNS {
 	 * true = if it's x
 	 * false = if it's a number
 	 */
-
 	class calculation {
 		public:
 			void calculationSteps() {
@@ -85,24 +83,25 @@ namespace lFNS {
 	inputCorrect iCO;
 
 	void linearFunctionCalcFunction() {
-		std::cout << "Shamans Linear function calculator" << std::endl;
+		system("clear");
+		std::cout << "Shamans Linear function calculator" << std::endl;		// Welcome Text
 		std::cout << "Enter your function step by step: " << std::endl;
 		std::cout << "(If you want to exit enter q)" << std::endl;
 
-		std::cout << "m = ";
+		std::cout << "m = ";	// Number for m
 		std::cin >> lFO.m;
-		if (lFO.m == 'q') {
+		if (lFO.m == 'q' || lFO.m == 'Q') {	// FIXME: q for exit
 			exit(EXIT_SUCCESS);
 		}
-		std::cout << "y=" << lFO.m << "x + b" << std::endl;
+		std::cout << "y=" << lFO.m << "x + b" << std::endl;		// The function after input
 
 		// FIXME: x = "x"(x to be calculated) and if x = number then calculate
 		// cout << "Enter 'x' to leave it blank" << endl;
-		std::cout << "\nx = ";
+		std::cout << "\nx = ";	// Number or x for x
 		std::cin >> lFO.x;
 		wiXO.functionPrint();
 
-		std::cout << "\nb = ";
+		std::cout << "\nb = ";	// number
 		std::cin >> lFO.b;
 		std::cout << "y=" << lFO.m << lFO.x << " + " <<lFO.b << std::endl;
 		/**************************************************************************

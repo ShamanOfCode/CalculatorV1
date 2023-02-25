@@ -32,22 +32,22 @@ namespace normalCalculatorNamespace {
 		if (sign == '*') {
 			sum = num1 * num2;
 			std::cout << sum << std::endl;
-			unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-			usleep(3 * microsecond);				// Sleep for 3 seconds
+			usleep(3 * microsecond);					// Sleep for 3 seconds
 			return normalCalculatorVoid();
 		}
 		// division
 		if (sign == '/') {
 			if (num1 == 0) {
-				std::cout << "You can't divide by 0" << std::endl;  // if you can't divide by 0
+				std::cout << "You can't divide by 0" << std::endl;	// if you can't divide by 0
+				exit(133);
 			}
 			else if (num2 == 0) {
-				std::cout << "You can't divide by 0" << std::endl;  // if you can't divide by 0
+				std::cout << "You can't divide by 0" << std::endl;	// if you can't divide by 0
+				usleep(3 * microsecond);
 			}
 			else {
 				sum = num1 / num2;
 				std::cout << sum << std::endl;
-				unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
 				usleep(3 * microsecond);				// Sleep for 3 seconds
 				return normalCalculatorVoid();
 			}
@@ -56,16 +56,14 @@ namespace normalCalculatorNamespace {
 		if (sign == '+') {
 			sum = num1 + num2;
 			std::cout << sum << std::endl;
-			unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-			usleep(3 * microsecond);				// Sleep for 3 seconds
+			usleep(3 * microsecond);					// Sleep for 3 seconds
 			return normalCalculatorVoid();
 		}
 		// addition
 		if (sign == '-') {
 			sum = num1 - num2;
 			std::cout << sum << std::endl;
-			unsigned int microsecond = 1000000;	// Sleep function: usleep(x * microsecond); change x to define the seconds
-			usleep(3 * microsecond);				// Sleep for 3 seconds
+			usleep(3 * microsecond);					// Sleep for 3 seconds
 			return normalCalculatorVoid();
 		}
 	}
