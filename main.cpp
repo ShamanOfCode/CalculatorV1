@@ -7,6 +7,7 @@
 * equalization procedure (Gleichsetzungsverfahren)
 * addition procedure	(Additionverfahren)
 * theorem of pythagoras	(Satz des Pythagoras)
+* quadratic functions	(quadratische Funktionen)
 **************************************************/
 
 #include <iostream>

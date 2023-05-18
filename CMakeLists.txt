@@ -10,6 +10,7 @@ add_executable(CalculatorV1 main.cpp
     header/normalCalculator.h
     header/linear_system_of_equation.h
     header/theorem_of_pythagoras.h
+    header/quadratic_functions.h
     header/welcome.h)
 
 install(TARGETS CalculatorV1
