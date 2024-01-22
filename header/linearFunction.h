@@ -79,9 +79,19 @@ namespace lFNS {
 			void inputCorrectFunction() {
 				std::cout << "Is your function correct or do you want to change it? (yes/no):" << std::endl;
 				std::cin >> choice;
+
+				if (choice == "yes" || choice == "Yes" || choice == "YES" || choice == "y" || choice == "Y") {
+					calcO.calculationSteps();
+				}
+
+				// FIXME: "Your Function"
+				else if (choice == "no" || choice == "No" || choice == "NO") {
+					system("clear");
+				}
 			}
 	};
 	inputCorrect iCO;
+
 
 	void linearFunctionCalcFunction() {
 		system("clear");
@@ -122,18 +132,12 @@ namespace lFNS {
 			iCO.inputCorrectFunction();
 		}
 
-		if (iCO.choice == "yes" || iCO.choice == "Yes" || iCO.choice == "YES" || iCO.choice == "y" || iCO.choice == "Y") {
-			calcO.calculationSteps();
-		}
+		else {
 
-		// FIXME: "Your Function"
-		else if (iCO.choice == "no" || iCO.choice == "No" || iCO.choice == "NO") {
-			system("clear");
-			return linearFunctionCalcFunction();
 		}
 		return linearFunctionCalcFunction();
 	}
 
-};
+	};
 
 #endif // LINEARVARIABLE_H

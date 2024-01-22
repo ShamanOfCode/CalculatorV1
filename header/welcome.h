@@ -2,7 +2,6 @@
 #define WELCOME_H
 #include <iostream>
 #include <unistd.h>		// For usleep (i think)
-#include <ctype.h>
 #include "linearFunction.h"
 #include "normalCalculator.h"
 #include "linear_system_of_equation.h"
@@ -28,6 +27,7 @@ namespace welcomeNamespace {
 				std::cout << "(2) Linear function" << std::endl;
 				std::cout << "(3) Linear system of equation" << std::endl;
 				std::cout << "(4) Theorem of Pythagoras " << std::endl;
+				std::cout << "(0) Tester" << std::endl;
 				std::cout << "...more soon\n" << std::endl;
 				std::cout << "Choose your method: ";
 				std::cin >> choice;
@@ -59,6 +59,10 @@ namespace welcomeNamespace {
 						system("clear");
 						return welcomeInputFunction();
 					break;
+					case '0':
+						system("clear");
+
+						break;
 				}
 			}
 

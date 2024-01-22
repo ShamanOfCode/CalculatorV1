@@ -2,7 +2,6 @@
 #ifndef NORMALCALCULATOR_H
 #define NORMALCALCULATOR_H
 #include <iostream>
-#include <cmath>	// sqrt()
 #include <unistd.h>		// For usleep (i think)
 
 namespace normalCalculatorNamespace {
@@ -39,11 +38,13 @@ namespace normalCalculatorNamespace {
 		if (sign == '/') {
 			if (num1 == 0) {
 				std::cout << "You can't divide by 0" << std::endl;	// if you can't divide by 0
-				exit(133);
+				usleep(3 * microsecond);
+				normalCalculatorVoid();
 			}
 			else if (num2 == 0) {
 				std::cout << "You can't divide by 0" << std::endl;	// if you can't divide by 0
 				usleep(3 * microsecond);
+				normalCalculatorVoid();
 			}
 			else {
 				sum = num1 / num2;
