@@ -11,7 +11,8 @@ add_executable(CalculatorV1 main.cpp
     header/linear_system_of_equation.h
     header/theorem_of_pythagoras.h
     header/quadratic_functions.h
-    header/welcome.h)
+	header/welcome.h
+	header/tester.h)
 
 install(TARGETS CalculatorV1
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
