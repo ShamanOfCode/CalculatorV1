@@ -8,7 +8,7 @@
 * addition procedure
 * theorem of pythagoras
 * quadratic functions
-* Curve sketching
+* curve sketching
 **************************************************/
 
 #include <unistd.h>		// For usleep (i think)
